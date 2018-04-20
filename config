@@ -1,0 +1,44 @@
+# This ssh config file defines the settings for common server connection.
+# OSU CSE stdlinux server
+Host stdlinux
+    HostName stdlinux.cse.ohio-state.edu
+    Port 22
+    User yang.736
+    IdentityFile ~/.ssh/stdlinux.key
+# OSC oakley account
+Host osc
+    HostName oakley.osc.edu
+    Port 22
+    User osu8274
+# Chameleon cloud GPU server
+Host chameleonGPU
+    HostName 129.114.109.171
+    Port 22
+    User cc
+    IdentityFile ~/.ssh/gpucloudkey.pem
+    ForwardX11 yes
+    ForwardAgent yes
+# Amazon EC2 server
+Host ec2
+    HostName ec2-54-245-190-212.us-west-2.compute.amazonaws.com
+    Port 22
+    User ubuntu
+    IdentityFile ~/.ssh/zhy028-cse260-wi18.pem
+# UCSD sorken
+Host sorken
+    HostName sorken.ucsd.edu
+    Port 22
+    User zhy028
+    IdentityFile ~/.ssh/id_rsa
+# Hadoop Course
+Host hadoop
+    HostName 54.85.143.224
+    Port 22
+    User hirwuser710
+    IdentityFile ~/.ssh/hirwuser710.pem
+# UCSD bang
+Host bang
+    HostName ccom-bang-login.ucsd.edu
+    Port 22
+    User zhy028
+    IdentityFile ~/.ssh/id_rsa
